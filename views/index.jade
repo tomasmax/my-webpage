@@ -1,5 +1,406 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	// wrapper start
+	#wrapper.wrapper
+		header
+			// banner start
+			#banner.banner.row
+				.col-xs-12.col-sm-12.col-md-12.col-lg-12.noPadd(style='height:100%')
+					// background slide show start
+					ul.cb-slideshow
+						li
+							span Image 01
+						li
+							span Image 02
+						li
+							span Image 03
+					// background slide show end
+			// banner end
+			.bannerText.container
+				h1 I'm Jonathan Doe
+				h2 Design & Build Beautiful Crafted Web Experiences
+			// menu start
+			.menu
+				.navbar-wrapper
+					.container
+						.navwrapper
+							.navbar.navbar-inverse.navbar-static-top
+								.container
+									.navbar-header
+										button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+											span.icon-bar
+											span.icon-bar
+											span.icon-bar
+										a.navbar-brand(href='index.html#') Menu
+									.navbar-collapse.collapse
+										ul.nav.navbar-nav
+											li.menuItem.active
+												a(href='index.html#wrapper') Home
+											li.menuItem
+												a(href='index.html#aboutme') About
+											li.menuItem
+												a(href='index.html#technical') Skills
+											li.menuItem
+												a(href='index.html#exprience') Experience
+											li.menuItem
+												a(href='index.html#education') Education
+											li.menuItem
+												a(href='index.html#protfolio') Portfolio
+											li.menuItem
+												a(href='index.html#contact') Contact
+						// End Navbar
+			// menu end
+		// about me start
+		section#aboutme.aboutme
+			.container
+				.heading
+					h2 About me
+					p A small introduction about my self
+				.row
+					.col-xs-12.col-sm-12.col-md-7.col-lg-7
+						h3 Jonathan Doe
+						h4.subHeading Webdesigner & Web Developer from Melbourne
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.  cillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						p
+							| nulla pariatur.uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. olore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						a.bntDownload(href='index.html#') Download Printable Resume
+					.col-xs-12.col-sm-12.col-md-4.col-lg-4.col-md-offset-1.col-lg-offset-1.proPic
+						img.img-circle.topmar(src='images/me.jpg', alt='')
+		// about me end
+		// technical start
+		section#technical.technical
+			.container
+				.heading
+					h2 Technical Skills
+					p I can say i’m quite good at
+				.row
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='90')
+								span.percent
+							h4 Photoshop
+							p Donec accumsan ligula vitae mag na curabitur id
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='80')
+								span.percent
+							h4 Illustrator
+							p Donec accumsan ligula vitae mag na curabitur id
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='80')
+								span.percent
+							h4 Flash
+							p Donec accumsan ligula vitae mag na curabitur id
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='75')
+								span.percent
+							h4 HTML5 / CSS3
+							p Donec accumsan ligula vitae mag na curabitur id
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='60')
+								span.percent
+							h4 jQuery
+							p Donec accumsan ligula vitae mag na curabitur id
+					.col-xs-12.col-sm-4.col-md-4.col-lg-4.skillsArea
+						.col-xs-12.col-sm-6.col-md-6.col-lg-6.skills
+							span.chart.skilBg(data-percent='65')
+								span.percent
+							h4 PHP / MySQL
+							p Donec accumsan ligula vitae mag na curabitur id
+		// technical end
+		// exprience start
+		section#exprience.exprience
+			.container
+				.heading
+					h2 Work Experience
+					p My previous associations
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear
+							| Mar,2011
+							br
+							| Present
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 UIzards
+							h5 Senior UX Designer
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear
+							| Mar,2011
+							br
+							| Present
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 Lexind
+							h5 Visual / UI Designer
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear
+							| Mar,2011
+							br
+							| Present
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 Matrix Media
+							h5 Visual / UI Designer
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+		// exprience end
+		// education start
+		section#education.education
+			.container
+				.heading
+					h2 Education & Diplomas
+					p What I have done in my academic career
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear Mar,2010
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 Master Degree of Design
+							h5 University of Design
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear Sept, 2007
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 Bachelor of Arts
+							h5 University of Design
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+				.row.workDetails
+					.col-xs-12.col-sm-3.col-md-2.col-lg-2
+						.workYear Feb, 2005
+					.col-xs-12.col-sm-9.col-md-10.col-lg-10.rightArea
+						.arrowpart
+						.exCon
+							h4 Master Degree of Design
+							h5 University of Design
+							p
+								| Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+		// education end
+		// protfolio start
+		section#protfolio.protfolio
+			.container
+				.heading
+					h2 Portfolio
+					p showcase of my latest works
+				.portfolioFilter
+					ul
+						li
+							a.current(href='index.html#', data-filter='*') All
+						li
+							a(href='index.html#', data-filter='.photos') Photos
+						li
+							a(href='index.html#', data-filter='.branding') Branding
+						li
+							a(href='index.html#', data-filter='.illustration') Illustration
+				ul.portfolioContainer.row
+					li.photos.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-1.jpg', title='Project Title1')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-1.jpg', alt='')
+					li.branding.illustration.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-2.jpg', title='Project Title2')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-2.jpg', alt='')
+					li.illustration.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-3.jpg', title='Project Title3')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-3.jpg', alt='')
+					li.branding.illustration.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-4.jpg', title='Project Title4')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-4.jpg', alt='')
+					li.illustration.photos.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-5.jpg', title='Project Title5')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-5.jpg', alt='')
+					li.branding.photos.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-6.jpg', title='Project Title6')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-6.jpg', alt='')
+					li.illustration.photos.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-7.jpg', title='Project Title7')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-7.jpg', alt='')
+					li.branding.col-xs-6.col-sm-4.col-md-3.col-lg-3
+						.lightCon
+							span.hoverBox
+								span.smallIcon
+									a.zoom.lb.lb_warsaw1(rel='lightbox-demo', href='images/big-8.jpg', title='Project Title8')
+										i.fa.fa-search.fa-2x
+									a.linKed(href='index.html#', title='Project Link', target='_blank')
+										i.fa.fa-link.fa-2x
+							img(src='images/thu-8.jpg', alt='')
+		// protfolio end
+		// contact start
+		section#contact.contact
+			.container.topCon
+				.heading
+					h2 Get In Touch
+					p Please feel free if you would like to have a chat.
+			.row.mapArea
+				iframe(frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/?ie=UTF8&ll=-37.817682,144.957595&spn=0.01134,0.026157&t=m&z=16&output=embed')
+		section.contactDetails
+			.container
+				// contact info start
+				.col-xs-12.col-sm-3.col-md-4.col-lg-4
+					h4 Contact details
+					p
+						i.fa.fa-map-marker.fa-lg
+						| Collins Street West Victoria 8007 Australia
+					p
+						i.fa.fa-mobile.fa-lg
+						| +1800 1234 56789
+					p
+						i.fa.fa-envelope-o
+						a(href='mailto:support@websitename.com') support@websitename.com
+					p
+						i.fa.fa-link
+						a(href='http://themeelite.com/demos/flato/template-2/www.websitename.com') www.websitename.com
+				// contact info end
+				// contact form start
+				.col-xs-12.col-sm-9.col-md-8.col-lg-8.conForm
+					h4 Shoot a message!
+					#message
+					form#cform(method='post', action='http://themeelite.com/demos/flato/template-2/php/contact.php', name='cform')
+						input#name.col-xs-12.col-sm-6.col-md-6.col-lg-6(name='name', type='text', placeholder='Your name...')
+						input#email.col-xs-12.col-sm-6.col-md-6.col-lg-6.noMarr(name='email', type='email', placeholder='Your email...')
+						textarea#comments.col-xs-12.col-sm-12.col-md-12.col-lg-12(name='comments', cols='', rows='', placeholder='Your message...')
+						input#submit.submitBnt(type='submit', name='send', value='Send message')
+						#simple-msg
+				// contact form end
+		// contact end
+		// footer start
+		section#footer.footer
+			.container
+				ul
+					li
+						a(href='index.html#')
+							i.fa.fa-twitter.fa-2x
+					li
+						a(href='index.html#')
+							i.fa.fa-facebook.fa-2x
+					li
+						a(href='index.html#')
+							i.fa.fa-linkedin.fa-2x
+					li
+						a(href='index.html#')
+							i.fa.fa-pinterest.fa-2x
+					li
+						a(href='index.html#')
+							i.fa.fa-dribbble.fa-2x
+					li
+						a(href='index.html#')
+							i.fa.fa-rss.fa-2x
+		// footer end
+	// wrapper end
+	// modernizr js
+	script(type='text/javascript', src='js/modernizr.custom.26633.js')
+	// jquary min js
+	script(type='text/javascript', src='js/jquery.min.js')
+	script(src='js/bootstrap.js')
+	script(type='text/javascript', src='js/jquery.gridrotator.js')
+	// for custom jquary
+	script(src='js/custom.js')
+	// for placeholder jquary
+	script(type='text/javascript', src='js/jquery.placeholder.js')
+	// for menu jquary
+	script(type='text/javascript', src='js/stickUp.js')
+	script(type='text/javascript')
+		jQuery(function($) {
+			$(document).ready( function() {
+			//enabling stickUp on the '.navbar-wrapper' class
+				$('.navbar-wrapper').stickUp({
+					parts: {
+					0: 'banner',
+					1: 'aboutme',
+					2: 'technical',
+					3: 'exprience',
+					4: 'education',
+					5: 'protfolio',
+					6: 'contact'
+					},
+					itemClass: 'menuItem',
+					itemHover: 'active',
+					topMargin: 'auto'
+				});
+			});
+			$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+				$( ".navbar-collapse" ).addClass( "hideClass" );
+			});
+			$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+				$( ".navbar-collapse" ).addClass( "collapse" );
+			});
+			$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+				$( ".navbar-collapse" ).removeClass( "in" );
+			});
+			$( ".navbar-toggle" ).click(function() {
+				$( ".navbar-collapse" ).removeClass( "hideClass" );
+			});
+		});
+	// for portfoli filter jquary
+	script(src='js/jquery.isotope.js', type='text/javascript')
+	// for portfoli lightbox
+	link#theme(type='text/css', rel='stylesheet', href='css/jquery-ui-1.8.16.custom.css')
+	link(type='text/css', rel='stylesheet', href='css/lightbox.min.css')
+	script(type='text/javascript', src='js/jquery.ui.widget.min.js')
+	script(type='text/javascript', src='js/jquery.ui.rlightbox.js')
+	// for skill chat jquary
+	script(src='js/jquery.easing.min.js')
+	script(src='js/jquery.easypiechart.js')
+	// contact form js
+	script(type='text/javascript', src='js/jquery.contact.js')
